@@ -1,0 +1,11 @@
+server:
+    port:9090
+
+chris:
+  name: lilun
+  adress: sz,futian
+  msg: hello chris:${chris.name},${chris.adress},${int.num},${port}
+
+int.num: ${random.int}
+port: ${random.int[1024,9999]}
+

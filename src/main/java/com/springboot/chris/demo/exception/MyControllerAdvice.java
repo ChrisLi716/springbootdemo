@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @ControllerAdvice
-public class MyException {
+public class MyControllerAdvice {
 	
 	@ResponseBody
 	@ExceptionHandler(value = Exception.class)
@@ -16,6 +16,15 @@ public class MyException {
 		Map<String, String> exceptions = new HashMap<>();
 		exceptions.put("code", "-1");
 		exceptions.put("msg", exception.getMessage());
+		return exceptions;
+	}
+	
+	@ResponseBody
+	@ExceptionHandler(value = BusinessException.class)
+	public Map<String, String> bizErrorHandler(BusinessException bizException) {
+		Map<String, String> exceptions = new HashMap<>();
+		exceptions.put("code", bizException.getCode());
+		exceptions.put("msg", bizException.getMsg());
 		return exceptions;
 	}
 }
