@@ -1,4 +1,4 @@
-package com.springboot.chris.demo;
+package com.springboot.chris.demo.mq;
 
 import org.springframework.amqp.core.Queue;
 import org.springframework.context.annotation.Bean;

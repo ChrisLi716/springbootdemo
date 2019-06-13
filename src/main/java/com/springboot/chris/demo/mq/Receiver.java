@@ -1,4 +1,4 @@
-package com.springboot.chris.demo;
+package com.springboot.chris.demo.mq;
 
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;

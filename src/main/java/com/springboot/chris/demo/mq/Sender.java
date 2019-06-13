@@ -1,4 +1,4 @@
-package com.springboot.chris.demo;
+package com.springboot.chris.demo.mq;
 
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;

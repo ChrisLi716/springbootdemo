@@ -1,5 +1,6 @@
 package com.springboot.chris.demo;
 
+import com.springboot.chris.demo.mq.Sender;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
